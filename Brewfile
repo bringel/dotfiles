@@ -1,0 +1,13 @@
+install brew-cask
+install htop-osx
+install libksba
+install libyaml
+install macvim
+install rbenv
+install rbenv-bundler
+install ruby-build
+install terminal-notifier
+install tig
+install tmux
+install tree
+install wget
