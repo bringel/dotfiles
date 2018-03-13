@@ -1,0 +1,35 @@
+[user]
+	name = Brad Ringel
+	email = brad.ringel@gmail.com
+[core]
+	excludesfile = /Users/bringel/.gitignore_global
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[alias]
+  branches = branch -a
+  tags = tag
+  stashes = stash list
+  unstage = reset -q HEAD --
+  discard = checkout --
+  amend = commit --amend
+  uncommit = reset --mixed HEAD~
+  graph = log --graph --oneline
