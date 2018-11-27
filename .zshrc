@@ -11,6 +11,9 @@ alias ip6wifion="networksetup -setv6automatic Wi-Fi"
 alias fall13="cd ~/Documents/College/Fall\ 2013/"
 alias tmuxls="tmux list-sessions"
 
+alias atom-beta="atom"
+alias apm-beta="apm"
+alias vgbc-web="cd ~/Coding/vgbc-tracker"
 #. /Users/bringel/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
 NPM_PACKAGES=/Users/bringel/.npm-packages
@@ -192,3 +195,8 @@ fi
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+
+export NVM_DIR=~/.nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
